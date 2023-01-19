@@ -1,8 +1,11 @@
-import 'dart:html';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/pages/login_or_register_page.dart';
+import 'package:flutter_application_1/satin_al.dart';
+import 'package:flutter_application_1/satin_all.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -86,17 +89,27 @@ class _HomePageState extends State<HomePage> {
               children: [
                 //buton 1
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginOrRegisterPage())
+                    );
+                  },
                   child: Row(
                     children: [
-                      Text('Daha fazla bilgi'),
+                      Text('Kayıt Ol'),
                       Icon(Icons.keyboard_arrow_right_outlined)
                     ],
                   ),
                 ),
                 //buton 2
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => satin_all())
+                    );
+                  },
                   child: Row(
                     children: [
                       Text('Satın alın'),
