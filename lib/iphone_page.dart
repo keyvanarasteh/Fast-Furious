@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_page.dart';
+import 'package:flutter_application_1/pages/login_or_register_page.dart';
+import 'package:flutter_application_1/pages/register_page.dart';
 import 'package:flutter_application_1/satin_al.dart';
 
 class iphone_page extends StatelessWidget {
@@ -16,7 +19,6 @@ class iphone_page extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 52, 47, 47),
         elevation: 0,
-        
         actions: [
           IconButton(
             onPressed: () {},
@@ -30,88 +32,71 @@ class iphone_page extends StatelessWidget {
       drawer: Drawer(
         child: Container(
           color: Color.fromARGB(255, 52, 47, 47),
-          child: ListView(
-            children: [
-              DrawerHeader(child: Icon(
-               Icons.apple,
-               color: Colors.white,
-               size: 34,
+          child: ListView(children: [
+            DrawerHeader(
+              child: Icon(
+                Icons.apple,
+                color: Colors.white,
+                size: 34,
               ),
-              ),
-             ListTile(
+            ),
+            ListTile(
               title: Text(
                 'Store',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'İpad',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'İphone',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'Watch',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'AirPods',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'TV ve EV',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'Yalnızca Appleda ',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ), ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'Aksesuarlar',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ), ListTile(
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(
               title: Text(
                 'Destek',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-            ]
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
             ),
+          ]),
         ),
-        ),
+      ),
       //BODY
       body: SingleChildScrollView(
         child: Column(
@@ -151,10 +136,15 @@ class iphone_page extends StatelessWidget {
               children: [
                 //buton 1
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => LoginOrRegisterPage()));
+                  },
                   child: Row(
                     children: [
-                      Text('Daha fazla bilgi'),
+                      Text('Giriş Yap'),
                       Icon(Icons.keyboard_arrow_right_outlined)
                     ],
                   ),
@@ -162,10 +152,8 @@ class iphone_page extends StatelessWidget {
                 //buton 2
                 TextButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => satin_al())
-                    );
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => satin_al()));
                   },
                   child: Row(
                     children: [

@@ -1,18 +1,16 @@
-# Fast-Furious
-*Flutter* *UX* **Fast-Furious**
+# flutter_application_1
 
->developers
+A new Flutter project.
 
-> Murat Ekin Genç X 212016727
-> Murat Altın X 212016755
-> Arda Yılmaz X 212016742
+## Getting Started
 
-[apple](https://www.apple.com/tr/)
+This project is a starting point for a Flutter application.
 
+A few resources to get you started if this is your first Flutter project:
 
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-[Supervisor: Keyvan Arasteh](https://github.com/keyvanarasteh/)
-
-
-# screenshot
-![alt text](https://abilitynet.org.uk/sites/abilitynet.org.uk/files/admin/Screen%20Shot%202018-09-14%20at%2012.18.15_0.png)
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

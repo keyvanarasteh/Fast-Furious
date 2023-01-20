@@ -3,13 +3,13 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/iphone_page.dart';
 
-class satin_al extends StatefulWidget {
-  const satin_al({super.key});
+class satin_all extends StatefulWidget {
+  const satin_all({super.key});
   @override
-  State<satin_al> createState() => _chip2State();
+  State<satin_all> createState() => _chip2State();
 }
 
-class _chip2State extends State<satin_al> {
+class _chip2State extends State<satin_all> {
   //List<String> skills = [];
 
   Set<String> skills = {};
@@ -26,112 +26,39 @@ class _chip2State extends State<satin_al> {
     return Scaffold(
       //APPBAR
       appBar: AppBar(
-        title: 
-        
-        
-        Icon(
-          Icons.apple,
-          size: 24,
-        ),
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 52, 47, 47),
-        elevation: 0,
-        
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.shopping_bag,
-              color: Color.fromARGB(255, 212, 202, 202),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Icon(
+              Icons.apple,
+              size:24,
             ),
+            Text("Store"),
+            Text("Mac"),
+            Text("İpad"),
+            Text("İphone"),
+            Text("Watch"),
+            Text("AirPods"),
+            Text("TV ve Ev"),
+            Text("Yalnızca Apple'da"),
+            Text("Aksesuarlar"),
+            Text("Destek"),
+          Icon(
+            Icons.search,
+            size:24,
           ),
-        ],
-      ),
-      drawer: Drawer(
-        child: Container(
-          color: Color.fromARGB(255, 52, 47, 47),
-          child: ListView(
-            children: [
-              DrawerHeader(child: Icon(
-               Icons.apple,
-               color: Colors.white,
-               size: 34,
-              ),
-              ),
-             ListTile(
-              title: Text(
-                'Store',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'İpad',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'İphone',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'Watch',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'AirPods',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'TV ve EV',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-              ListTile(
-              title: Text(
-                'Yalnızca Appleda ',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ), ListTile(
-              title: Text(
-                'Aksesuarlar',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ), ListTile(
-              title: Text(
-                'Destek',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20),
-                ),
-             ),
-            ]
-            ),
+          Icon(
+            Icons.shopping_bag,
+            size:24,
+          )  
+          ],
         ),
+        backgroundColor: Color.fromARGB(255, 52, 47, 47,),
+        elevation: 0,
         ),
+      
+        
+          
       //BODY
       body: SingleChildScrollView(
         child: Column(
